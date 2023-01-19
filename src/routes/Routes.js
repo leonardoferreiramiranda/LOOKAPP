@@ -1,5 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
+import { colors } from "../styles/them.json";
+import { Icon } from "react-native-vector-icons/SimpleLineIcons";
 
 import Home from "../pages/Home";
 import SignIn from "../pages/Signin";
@@ -13,9 +15,18 @@ const Routes = () => {
 
   function MyDrawer() {
     return (
-      <Drawer.Navigator>
+      <Drawer.Navigator
+        screenOptions={{
+          drawerActiveBackgroundColor: colors.danger,
+          drawerActiveTintColor: colors.light,
+          drawerInactiveTintColor: colors.muted,
+          drawerStyle: {
+            backgroundColor: colors.black,
+          },
+        }}
+      >
         <Drawer.Screen
-          name="DrawerFeed"
+          name="Feed"
           component={Feed}
           options={{ headerShown: false }}
         />

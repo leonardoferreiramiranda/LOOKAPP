@@ -19,7 +19,7 @@ const Header = ({ title }) => {
         width="70px"
         justify="center"
         align="center"
-        onPress={() => navigation.navigate('DrawerFeed')}
+        onPress={() => navigation.openDrawer()}
       >
         <Icon name="menu" size={35} />
       </Touchable>

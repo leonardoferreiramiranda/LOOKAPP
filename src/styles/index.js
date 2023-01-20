@@ -47,6 +47,7 @@ export const Title = styled.Text`
   color: ${(props) => colors[props.color || "dark"]};
   font-size: ${(props) => fonts.title.sizes[props.variant || "normal"]};
   padding: ${(props) => (props.hasPadding ? "20px" : "0px")};
+  margin: ${(props) => props.spacing || 0};
   letter-spacing: -0.8px;
   line-height: ${(props) => fonts.title.sizes[props.variant || "normal"]};
   text-align: ${(props) => props.align || "left"};

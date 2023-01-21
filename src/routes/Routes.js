@@ -14,7 +14,8 @@ import SignUp from "../pages/Signup";
 import Feed from "../pages/Feed";
 import RecoverPassword from "../pages/Recoverpassword";
 import Cart from "../pages/Cart";
-
+import CongratsModal from "../components/Modals/congrats";
+import Orders from "../pages/Orders";
 import Marketplace from "../pages/Marketplace";
 import Category from "../pages/Marketplace/category";
 import Product from "../pages/Marketplace/product";
@@ -75,7 +76,7 @@ const Routes = () => {
         />
         <Drawer.Screen
           name="Orders"
-          component={Feed}
+          component={Orders}
           options={{
             headerShown: false,
             drawerIcon: ({ color }) => (
@@ -88,7 +89,7 @@ const Routes = () => {
   }
 
   return (
-    <Stack.Navigator initialRouteName="Cart">
+    <Stack.Navigator>
       <Stack.Screen
         name="Home"
         component={Home}
@@ -127,6 +128,11 @@ const Routes = () => {
       <Stack.Screen
         name="Cart"
         component={Cart}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="CongratsModal"
+        component={CongratsModal}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

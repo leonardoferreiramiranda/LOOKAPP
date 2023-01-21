@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, ScrollView, Text } from "../../styles";
+import { Box } from "../../styles";
 import Post from ".";
 
 const PostList = () => {

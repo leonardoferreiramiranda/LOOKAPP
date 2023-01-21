@@ -4,9 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 
 const SignUp = () => {
   function redirecionar() {
-    alert(
-      "Conta criada com sucesso. Você foi direcionada para tela de login"
-    );
+    alert("Conta criada com sucesso. Você foi direcionada para tela de login");
     navigation.navigate("SignIn");
   }
 

@@ -8,10 +8,10 @@ const Tabs = ({ tabs, active = "", onChange = (tab) => {} }) => {
     borderBottomColor: colors.danger,
   };
   return (
-    <Box row background="blue" height="80px">
+    <Box row background="light" height="80px">
       {tabs?.map((tab) => (
         <Touchable
-        onPress={() => onChange(tab.value)}
+          onPress={() => onChange(tab.value)}
           align="center"
           hasPadding
           style={[active === tab.value ? activeTabStyle : {}]}

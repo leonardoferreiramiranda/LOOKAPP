@@ -62,7 +62,7 @@ const Product = () => {
           </Text>
           <Spacer size="30px" />
           <Picker
-          title="Tamanho"
+            title="Tamanho"
             options={[
               { label: "P", value: "P" },
               { label: "M", value: "M" },
@@ -70,10 +70,10 @@ const Product = () => {
               { label: "XG", value: "XG" },
             ]}
             initialValue="M"
-            onChange={value => alert(value)}
+            onChange={(value) => alert(value)}
           />
           <Spacer size="30px" />
-          <Button block onPress={() => navigation.navigate('Cart')}>
+          <Button block onPress={() => navigation.navigate("Cart")}>
             <Text color="light">Adicionar ao carrinho</Text>
           </Button>
         </Box>

@@ -4,8 +4,7 @@ import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import { colors } from "../../styles/them.json";
 import { useNavigation } from "@react-navigation/native";
 
-const Header = ({ title='Explore', right = null, goBack = false }) => {
-
+const Header = ({ title = "Explore", right = null, goBack = false }) => {
   const navigation = useNavigation();
   return (
     <Box
@@ -19,9 +18,9 @@ const Header = ({ title='Explore', right = null, goBack = false }) => {
         width="70px"
         justify="center"
         align="center"
-        onPress={() => navigation[!goBack ? 'openDrawer' : 'goBack']()}
+        onPress={() => navigation[!goBack ? "openDrawer" : "goBack"]()}
       >
-        <Icon name={!goBack ? 'menu' : 'arrow-left'} size={25} />
+        <Icon name={!goBack ? "menu" : "arrow-left"} size={25} />
       </Touchable>
       <Box align="center" justify="center">
         <Title>{title}</Title>

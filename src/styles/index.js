@@ -88,7 +88,7 @@ export const ScrollView = styled.ScrollView.attrs({
 })`
   padding: ${(props) => (props.hasPadding ? "20px" : "0")};
   flex: ${(props) => (props.height ? "none" : "1")};
-  width: ${(props) => (props.fluid ? "100px" : "auto")};
+  width: ${(props) => (props.fluid ? "100%" : "auto")};
   height: ${(props) => props.height || "auto"};
   background: ${(props) =>
     props.background ? colors[props.background] : "transparent"};
@@ -96,7 +96,7 @@ export const ScrollView = styled.ScrollView.attrs({
 
 export const Cover = styled.ImageBackground.attrs((props) => ({
   source: props.image ? { uri: props.image } : props.source,
-  resizeMode: 'cover',
+  resizeMode: "cover",
 }))`
   width: ${(props) => props.width || "60px"};
   height: ${(props) => props.height || "60px"};

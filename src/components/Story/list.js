@@ -12,8 +12,8 @@ const StoryList = () => {
           Show All
         </Text>
       </Box>
-      <ScrollView horizontal style={{ marginLeft: 20}}>
-        {Array.from(Array(20))?.map(item => (
+      <ScrollView horizontal style={{ marginLeft: 20 }}>
+        {Array.from(Array(20))?.map((item) => (
           <Story />
         ))}
       </ScrollView>

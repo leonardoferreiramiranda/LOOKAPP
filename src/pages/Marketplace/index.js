@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../components/Header";
-import { Box, Text, Touchable } from "../../styles/index";
+import { Touchable } from "../../styles/index";
 import Icon from "react-native-vector-icons/SimpleLineIcons";
 import CategoryList from "../../components/Category/list";
 
@@ -20,7 +20,7 @@ const Marketplace = () => {
           </Touchable>
         )}
       />
-        <CategoryList />
+      <CategoryList />
     </>
   );
 };

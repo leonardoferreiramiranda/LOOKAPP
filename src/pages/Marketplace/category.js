@@ -6,7 +6,10 @@ import { Touchable } from "../../styles/index";
 import Header from "../../components/Header";
 import ProductList from "../../components/Product/list";
 
+import { useNavigation } from "@react-navigation/native";
+
 const Category = () => {
+  const navigation = useNavigation();
   return (
     <>
       <Header
@@ -17,7 +20,7 @@ const Category = () => {
             width="70px"
             justify="center"
             align="center"
-            onPress={() => alert("teste")}
+            onPress={() => navigation.navigate('Orders')}
           >
             <Icon name="bag" size={25} />
           </Touchable>

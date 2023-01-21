@@ -27,7 +27,7 @@ const Product = () => {
             width="70px"
             justify="center"
             align="center"
-            onPress={() => alert("teste")}
+            onPress={() => navigation.navigate('Orders')}
           >
             <Icon name="bag" size={25} />
           </Touchable>
